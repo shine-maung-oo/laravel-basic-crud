@@ -1,0 +1,1401 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap");
+
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --main_color: #fc5a34;
+    --second_color: #ff3a06;
+    --text_color: #25292d;
+    --bg_color: #370617;
+    --footer_color: #feca00;
+    --active_color: #dc2f02;
+}
+
+/* header  */
+.top_header {
+    background-color: var(--bg_color);
+    padding: 10px 0;
+}
+
+.bottom_header {
+    background-color: var(--second_color);
+}
+
+.header_icon {
+    margin-right: 8px;
+}
+
+.flag_iocn {
+    width: 28px;
+}
+
+.border_right_hr {
+    border: 1px solid #cdc1c5;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 25px;
+}
+
+.header_text {
+    color: white;
+    font-size: 14px;
+    font-weight: 200;
+    white-space: nowrap;
+}
+
+.brand_img {
+    width: 48%;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 1px 2px var(--main_color);
+}
+
+.navbar .nav-item .nav-link {
+    color: white;
+    font-size: 14px;
+    white-space: nowrap;
+    font-weight: 500;
+    padding: 35px 45px;
+    background-color: transparent;
+    transition: background-color 0.3 ease;
+}
+
+.navbar .nav-item .nav-link.active,
+.navbar .nav-item .nav-link:hover {
+    background-color: var(--active_color);
+}
+
+/* end header  */
+
+/* slider  */
+.carousel-control-next,
+.carousel-control-prev {
+    opacity: 1 !important;
+}
+
+.feature_box {
+    border: 1px solid #beb7b78c;
+    border-radius: 30px 0px 30px 0;
+    box-shadow: 0 0 10px 0 #00000040;
+    padding: 15px 0;
+    background-color: white;
+}
+
+.feature_icon {
+    width: 63px;
+    margin-bottom: 12px;
+}
+
+.count {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.feature_text {
+    font-size: 15px;
+    line-height: 25px;
+    color: black;
+    font-weight: 500;
+}
+
+.slider {
+    z-index: 1;
+}
+
+.features {
+    position: relative;
+    z-index: 2;
+    margin-top: -120px;
+}
+
+/* end slider  */
+
+/* about */
+.slider_border {
+    border: 5px solid var(--main_color);
+    border-radius: 30px 0 30px 0;
+    overflow: hidden;
+    padding: 15px;
+}
+
+.about .main_header {
+    color: var(--main_color);
+    font-weight: 700;
+    display: inline-block;
+    border-bottom: 5px solid var(--main_color);
+    border-radius: 2px;
+    margin-bottom: 40px;
+}
+
+.about_sub_header {
+    color: var(--main_color);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.about .all_text {
+    color: var(--text_color);
+    font-size: 15px;
+    line-height: 27px;
+    text-align: justify;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.all_text {
+    color: var(--text_color);
+    font-size: 15px;
+    line-height: 27px;
+    text-align: justify;
+    font-weight: 500;
+}
+
+.seemore_btn {
+    border: 2px solid var(--main_color);
+    background-color: transparent;
+    color: var(--main_color);
+    font-size: 15px;
+    font-weight: 600;
+    padding: 12px 37px;
+    border-radius: 15px 0 15px 0;
+    transition: color 0.4s ease, background-color 0.4s ease;
+}
+
+.seemore_btn:hover {
+    color: white;
+    background-color: var(--main_color);
+}
+
+/* end about */
+
+/* products  */
+.main_header {
+    color: var(--main_color);
+    font-weight: 700;
+    display: inline-block;
+    border-bottom: 5px solid var(--main_color);
+    border-radius: 2px;
+}
+
+.sub_header {
+    color: #4f4f4f;
+    font-weight: 700;
+    margin: 20px 0 50px 0;
+}
+
+.product_box {
+    border-radius: 30px 0 30px 0;
+    overflow: hidden;
+}
+
+.product_header {
+    color: white;
+    background-color: var(--main_color);
+    padding: 20px;
+    font-weight: 600;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-bottom: 0;
+}
+
+.products .owl-nav {
+    height: 0;
+    position: absolute;
+    top: 43%;
+    width: 100%;
+}
+
+.products .owl-nav .owl-prev {
+    position: absolute;
+    left: -50px;
+}
+
+.products .owl-nav .owl-next {
+    position: absolute;
+    right: -50px;
+}
+
+.products {
+    background-color: #f5f5f5;
+}
+
+/* end products  */
+
+/* news  */
+.news_box {
+    border-radius: 30px 0 30px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.news_info {
+    background-color: var(--main_color);
+    border-radius: 30px 0 30px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 13px;
+}
+
+.news_header {
+    color: white;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.date {
+    color: var(--footer_color);
+    font-size: 14px;
+    padding-right: 10px;
+}
+
+/* end news  */
+
+/* footer  */
+
+.bg_layer {
+    background-image: url(../images/footer_bg.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.top_footer {
+    background-color: #212529;
+}
+
+.bottom_footer {
+    background-color: var(--bg_color);
+    padding: 13px 0;
+}
+
+.footer_logo {
+    width: 65%;
+}
+
+.footer_header {
+    color: var(--footer_color);
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.footer_icon {
+    width: 20px;
+    margin-right: 12px;
+    margin-top: 7px;
+}
+
+.footer_text {
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.footer_nav {
+    list-style: none;
+    padding: 0;
+}
+
+.footer_nav_link {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 35px;
+    font-weight: 300;
+}
+
+.dev_text {
+    color: var(--footer_color);
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+/* end footer  */
+
+/*  about us  */
+.culture {
+    background-color: #f5f5f5;
+}
+
+.honors {
+    color: white;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.bg-orange {
+    background-color: var(--main_color);
+}
+
+.workshop_header {
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    white-space: nowrap;
+    background-color: var(--main_color);
+    padding: 10px 0;
+}
+
+/*  end about us  */
+
+/* news  */
+.news_card {
+    border: 1px solid #dedada;
+    overflow: hidden;
+    display: block;
+    height: 100%;
+    cursor: pointer;
+}
+
+.news_body {
+    padding: 25px;
+}
+
+.news_title {
+    color: var(--main_color);
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 17px;
+    white-space: nowrap;
+}
+
+.news_icon {
+    width: 25px;
+    margin-right: 7px;
+}
+
+.info_text {
+    color: #998089;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.divider {
+    display: block;
+    border: 0;
+    border-bottom: 1px solid #dedada;
+    margin: 15px 0;
+}
+
+.news_text {
+    color: var(--text_color);
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 500;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.news_detail_text {
+    color: var(--text_color);
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 500;
+    text-align: justify;
+    margin-bottom: 0px;
+}
+
+.read_more {
+    color: black;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.news_detail_title {
+    color: var(--main_color);
+    font-weight: 700;
+    margin-bottom: 17px;
+    white-space: nowrap;
+}
+
+.news_sub_title {
+    color: black;
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+.cursor {
+    cursor: pointer !important;
+}
+
+/* end news  */
+
+/* contacts  */
+.contact_sub_header {
+    color: var(--main_color);
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.address_icon {
+    width: 20px;
+    margin-right: 7px;
+}
+
+.address_text {
+    color: var(--text_color);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 27px;
+}
+
+.contact_form .form-control,
+.contact_form .form-control::placeholder {
+    color: black;
+    font-size: 14px;
+}
+
+.contact_form .form-control {
+    background-color: #ebebeb;
+    border: none;
+    border-radius: 0;
+    padding: 20px;
+}
+
+.contact_form .form-control:focus {
+    box-shadow: none;
+    border-color: transparent;
+}
+
+.submit_btn {
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    background-color: var(--main_color);
+    font-size: 14px;
+    padding: 10px 35px;
+}
+
+/* end contacts  */
+
+/* product  */
+.all_products .card {
+    border: none !important;
+    border-radius: 0 !important;
+    background-color: #f5f5f5;
+}
+
+.all_products .card-body {
+    background-color: var(--main_color);
+}
+
+.all_products .card-body .card-title {
+    padding: 5px 30px;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.all_products .list-group {
+    padding: 25px 20px 50px 20px;
+}
+
+.all_products .list-group-item {
+    background-color: #f5f5f5;
+    padding: 15px 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    border-bottom: 1px solid #dedada;
+}
+
+.product-item {
+    text-decoration: none;
+    color: #595959;
+    font-size: 16px;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    transition: color 0.3s ease;
+}
+
+.product-item.active,
+.product-item:hover {
+    color: var(--main_color);
+    font-weight: 600;
+}
+
+.product_label {
+    color: black;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 5px 20px 4px 0 !important;
+}
+
+.product_detail {
+    color: var(--main_color);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 5px 4px !important;
+}
+
+.product_modal_box .modal-content {
+    border-radius: 35px !important;
+}
+
+.product_modal_box .modal-content .modal-body {
+    padding: 25px;
+}
+
+.product_modal_box .btn-close {
+    width: 10px;
+    height: 10px;
+    padding: 10px;
+    border: 2px solid #998089;
+    border-radius: 10px;
+    opacity: 1 !important;
+    filter: opacity(0.3) drop-shadow(0 0 #998089);
+}
+
+.product_modal_box .btn-close:focus {
+    border: 2px solid var(--main_color);
+    filter: opacity(0.3) drop-shadow(0 0 var(--main_color));
+    box-shadow: none !important;
+}
+
+/* end product  */
+
+/* keyframe fade effect  */
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade_effect {
+    animation-name: fade;
+    animation-duration: 1.3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes product_fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.product_fade_effect {
+    animation-name: product_fade;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+/* keyframe fade effect  */
+
+/* for backend  */
+.wrapper {
+    /* min-height: 100vh; */
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 250px;
+    display: block;
+    z-index: 1000;
+    color: #ffffff;
+    font-weight: 200;
+    background: var(--main_color);
+    -webkit-box-shadow: 4px 4px 10px rgba(69, 65, 78, 0.06);
+    -moz-box-shadow: 4px 4px 10px rgba(69, 65, 78, 0.06);
+    box-shadow: 4px 4px 10px rgba(69, 65, 78, 0.06);
+    transition: all .3s;
+}
+.main-panel {
+    position: relative;
+    width: calc(100% - 250px);
+    /* height: 100vh;
+    min-height: 100%; */
+    height: 100%;
+    float: right;
+    background-color: #dedada;
+    transition: all .3s;
+}
+
+.admin-menu{
+    list-style: none;
+    padding: 0 20px;
+}
+
+.admin-menu .nav-link{
+    color : white;
+    line-height: 1.5cm;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 0 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.admin-menu .nav-link.active,
+.admin-menu .nav-link:hover{
+    background-color: var(--active_color);
+}
+.main-panel .navbar{
+    background-color: var(--main_color);
+    -webkit-box-shadow: 4px 4px 10px rgba(69, 65, 78, 0.06);
+    -moz-box-shadow: 4px 4px 10px rgba(69, 65, 78, 0.06);
+    box-shadow: 4px 4px 10px rgba(69, 65, 78, 0.404) !important;
+}
+.main-panel .navbar-brand{
+    color: white;
+    font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
+}
+.card .card-header, .card-light .card-header {
+    padding: 1rem 1.25rem;
+    background-color: transparent;
+    border-bottom: 1px solid #ebecec !important;
+}
+.card, .card-light {
+    border-radius: 5px;
+    background-color: #ffffff;
+    margin-bottom: 30px;
+    box-shadow: 2px 6px 15px 0px rgba(69, 65, 78, 0.1);
+    border: 0px;
+}
+
+.page-title{
+    color: var(--main_color);
+    font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
+}
+
+.card-title{
+    color: var(--second_color);
+    font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
+}
+.add-new{
+    font-size: 14px;
+}
+.card-body thead tr th{
+    color: var(--active_color);
+    font-weight: 600;
+    font-size: 15px;
+}
+
+
+.card-body tbody tr td{
+    color: var(--text_color);
+    font-weight: normal;
+    font-size: 14px;
+    vertical-align: middle;
+}
+/* end for backend  */
+
+/* media query responsive  */
+@media screen and (min-width: 991px) {
+    .g-lg-4 {
+        --bs-gutter-x: 2rem !important;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .navbar .nav-item .nav-link {
+        padding: 30px 44px;
+    }
+
+    .brand_img {
+        width: 44%;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .brand_img {
+        width: 63%;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .navbar .nav-item .nav-link {
+        padding: 28px 30px;
+    }
+
+    .brand_img {
+        width: 68%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .main-panel{
+        width: 100%;
+    }
+    .w_view {
+        width: 100%;
+    }
+
+    .navbar-collapse {
+        padding-bottom: 15px;
+    }
+
+    .border_right_hr {
+        margin-left: 4px;
+        margin-right: 4px;
+        height: 21px;
+        margin-top: 2px;
+    }
+
+    .header_text {
+        font-size: 11px;
+    }
+
+    .header_icon {
+        margin-right: 6px;
+        width: 16px;
+    }
+
+    .flag_iocn {
+        width: 22px;
+    }
+
+    .top_header {
+        padding: 6px 0;
+    }
+
+    .brand_img {
+        width: 40%;
+    }
+
+    .navbar-toggler {
+        border: 1px solid var(--main_color);
+        border-radius: 0px;
+        padding: 4px 6px;
+        height: 50px;
+    }
+
+    .navbar {
+        padding: 3px 0 !important;
+    }
+
+    .navbar .nav-item .nav-link {
+        font-size: 13px;
+        padding: 10px 13px;
+    }
+
+    .mainslider_arrow {
+        width: 30px;
+    }
+
+    .feature_icon {
+        width: 40px;
+        margin-bottom: 7px;
+    }
+
+    .count {
+        font-size: 14px;
+        margin-bottom: 1px;
+    }
+
+    .feature_text {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .feature_box {
+        padding: 10px 0;
+    }
+
+    .features {
+        margin-top: -82px;
+    }
+
+    .about_arrow {
+        width: 21px;
+    }
+
+    .about .main_header {
+        font-size: 27px;
+        border-bottom: 4px solid var(--main_color);
+        margin-bottom: 22px;
+    }
+
+    .about_sub_header {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .about .all_text {
+        font-size: 13px;
+        line-height: 23px;
+        margin-bottom: 10px;
+    }
+
+    .all_text {
+        font-size: 13px;
+        line-height: 23px;
+    }
+
+    .main_header {
+        font-size: 27px;
+        border-bottom: 4px solid var(--main_color);
+    }
+
+    .sub_header {
+        font-size: 15px;
+        margin: 10px 0 40px 0;
+    }
+
+    .product_header {
+        padding: 15px 0;
+        font-size: 14px;
+    }
+
+    .product_arrow {
+        width: 30px;
+    }
+
+    .products .owl-nav .owl-prev {
+        left: -35px;
+    }
+
+    .products .owl-nav .owl-next {
+        right: -35px;
+    }
+
+    .news_header {
+        margin-bottom: 5px;
+        font-size: 14px;
+    }
+
+    .date {
+        font-size: 13px;
+        padding-right: 15px;
+    }
+
+    .news_info {
+        padding: 11px 0;
+    }
+
+    .seemore_btn {
+        font-size: 13px;
+        padding: 9px 33px;
+    }
+
+    .footer_logo {
+        width: 70%;
+    }
+
+    .footer_header {
+        margin-bottom: 10px;
+        font-size: 17px;
+    }
+
+    .footer_nav_link {
+        font-size: 13px;
+        line-height: 30px;
+    }
+
+    .footer_icon {
+        width: 18px;
+        margin-right: 10px;
+        margin-top: 2px;
+    }
+
+    .footer_text {
+        font-size: 13px;
+        line-height: 27px;
+    }
+
+    .dev_text {
+        font-size: 12px;
+    }
+
+    .bottom_footer {
+        padding: 10px 0;
+    }
+
+    .honors {
+        font-size: 27px;
+    }
+
+    .workshop_header {
+        font-size: 13px;
+    }
+
+    .all_products .card-body .card-title {
+        padding: 0px 10px;
+        font-size: 20px;
+    }
+
+    .all_products .list-group {
+        padding: 20px 15px 40px 15px;
+    }
+
+    .product-item {
+        font-size: 14px;
+    }
+
+    .all_products .list-group-item {
+        padding: 11px 0px;
+    }
+
+    .product_modal_box .btn-close {
+        width: 0.5rem;
+        height: 0.5rem;
+        padding: 8px;
+        border-radius: 7px;
+        background: transparent var(--bs-btn-close-bg) center/0.75em auto
+            no-repeat;
+    }
+
+    .product_modal_box .modal-content .modal-body {
+        padding: 20px;
+    }
+
+    .product_modal_box .modal-content {
+        border-radius: 30px !important;
+    }
+
+    .product_label {
+        font-size: 14px;
+        padding: 1px 20px 2px 0 !important;
+    }
+
+    .product_detail {
+        font-size: 14px;
+        padding: 1px 2px !important;
+    }
+
+    .news_body {
+        padding: 20px;
+    }
+
+    .news_title {
+        font-size: 17px;
+        margin-bottom: 13px;
+    }
+
+    .news_icon {
+        width: 22px;
+        margin-right: 5px;
+    }
+
+    .info_text {
+        font-size: 13px;
+    }
+
+    .divider {
+        margin: 13px 0;
+    }
+
+    .news_text {
+        font-size: 13px;
+        line-height: 25px;
+        margin-bottom: 15px;
+    }
+
+    .read_more {
+        font-size: 13px;
+    }
+
+    .news_detail_title {
+        margin-bottom: 13px;
+        font-size: 18px;
+    }
+
+    .news_sub_title {
+        font-size: 15px;
+        margin: 13px 0;
+    }
+
+    .news_detail_text {
+        font-size: 13px;
+        line-height: 27px;
+    }
+
+    .contact_sub_header {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .address_icon {
+        width: 18px;
+        margin-right: 6px;
+    }
+
+    .address_text {
+        font-size: 13px;
+        line-height: 25px;
+    }
+
+    .contact_form .form-control,
+    .contact_form .form-control::placeholder {
+        font-size: 13px;
+    }
+
+    .contact_form .form-control {
+        padding: 15px;
+    }
+
+    .submit_btn {
+        font-size: 13px;
+        padding: 9px 30px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .products .owl-nav .owl-prev {
+        position: absolute;
+        left: -33px;
+    }
+
+    .products .owl-nav .owl-next {
+        position: absolute;
+        right: -33px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .border_right_hr {
+        height: 18px;
+        margin-top: 3px;
+    }
+
+    .header_text {
+        font-size: 10px;
+    }
+
+    .header_icon {
+        margin-right: 5px;
+        width: 14px;
+    }
+
+    .brand_img {
+        width: 65%;
+    }
+
+    .d-flex.justify-content-md-end.d-lg-none.d-md-none.pe-4 {
+        padding-right: 15px !important;
+    }
+
+    .navbar-toggler-icon {
+        width: 1.3em !important;
+        height: 1.3em !important;
+    }
+
+    .navbar-toggler {
+        border: 1px solid var(--main_color);
+        border-radius: 0px;
+        padding: 4px 3px;
+        height: 40px;
+    }
+
+    .navbar .nav-item .nav-link {
+        font-size: 12px;
+        padding: 8px 10px;
+        font-weight: 400;
+    }
+
+    .mainslider_arrow {
+        width: 23px;
+    }
+
+    .features {
+        margin-top: 40px;
+    }
+
+    .about .main_header {
+        font-size: 23px;
+        border-bottom: 3px solid var(--main_color);
+        margin-bottom: 18px;
+    }
+
+    .about_sub_header {
+        font-size: 16px;
+        margin-bottom: 7px;
+    }
+
+    .about .all_text {
+        font-size: 12px;
+        line-height: 20px;
+        margin-bottom: 7px;
+    }
+
+    .main_header {
+        font-size: 23px;
+        border-bottom: 3px solid var(--main_color);
+    }
+
+    .sub_header {
+        font-size: 13px;
+        margin: 10px 0 35px 0;
+    }
+
+    .seemore_btn {
+        font-size: 12px;
+        padding: 8px 30px;
+        border-radius: 14px 0 !important;
+    }
+
+    .product_header {
+        padding: 14px 0;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .news_header {
+        margin-bottom: 2px;
+        font-size: 14px;
+    }
+
+    .date {
+        font-size: 13px;
+        padding-right: 20px;
+    }
+
+    .footer_logo {
+        width: 55%;
+    }
+
+    .footer_header {
+        margin-bottom: 6px;
+        font-size: 16px;
+    }
+
+    .footer_icon {
+        width: 16px;
+        margin-right: 7px;
+        margin-top: 2px;
+    }
+
+    .footer_text {
+        font-size: 12px;
+        line-height: 25px;
+    }
+
+    .footer_nav_link {
+        font-size: 12px;
+        line-height: 27px;
+    }
+
+    .all_text {
+        font-size: 12px;
+        line-height: 21px;
+    }
+
+    .honors {
+        font-size: 25px;
+        padding: 30px 0;
+    }
+
+    .workshop_header {
+        font-size: 13px;
+        padding: 12px 0;
+    }
+
+    .bottom_footer {
+        padding: 5px 0;
+    }
+
+    .product_detail {
+        font-size: 12px;
+        padding: 1px 2px !important;
+    }
+
+    .product_label {
+        font-size: 13px;
+        padding: 1px 20px 2px 0 !important;
+    }
+
+    .product_modal_box .btn-close {
+        padding: 6px;
+        border-radius: 6px;
+        background: transparent var(--bs-btn-close-bg) center/0.55em auto
+            no-repeat;
+    }
+
+    .news_text {
+        font-size: 12px;
+        line-height: 22px;
+        margin-bottom: 13px;
+    }
+
+    .news_title {
+        font-size: 16px;
+        margin-bottom: 13px;
+        font-weight: 600;
+    }
+
+    .news_icon {
+        width: 21px;
+        margin-right: 5px;
+    }
+
+    .info_text {
+        font-size: 12px;
+    }
+
+    .read_more {
+        font-size: 12px;
+    }
+
+    .contact_sub_header {
+        font-size: 17px;
+        margin-bottom: 15px;
+    }
+
+    .contact_form .form-control {
+        padding: 10px;
+    }
+
+    .contact_form .form-control,
+    .contact_form .form-control::placeholder {
+        font-size: 12px;
+    }
+
+    .submit_btn {
+        font-size: 12px;
+        padding: 7px 25px;
+        border-radius: 4px;
+    }
+
+    .news_detail_title {
+        margin-bottom: 13px;
+        font-size: 17px;
+        font-weight: 600;
+    }
+
+    .news_detail_text {
+        font-size: 12px;
+        line-height: 24px;
+    }
+
+    .news_sub_title {
+        font-weight: 600;
+        font-size: 13px;
+        margin: 11px 0;
+    }
+
+    .contacts .d-flex.ps-3 {
+        padding-left: 0px !important;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .header_text {
+        font-size: 8px;
+    }
+
+    .header_icon {
+        margin-right: 1px;
+        width: 10px;
+        margin-bottom: 2px;
+    }
+
+    .navbar-toggler-icon {
+        width: 1em !important;
+        height: 1em !important;
+    }
+
+    .navbar-toggler {
+        padding: 2px 2px 4px 2px;
+        height: 30px;
+    }
+
+    .brand_img {
+        width: 90%;
+    }
+
+    .navbar .nav-item .nav-link {
+        font-size: 11px;
+        padding: 6px 7px;
+        font-weight: 400;
+    }
+
+    .news_body {
+        padding: 20px 10px;
+    }
+
+    .news_title {
+        font-size: 14px;
+        margin-bottom: 13px;
+        font-weight: 600;
+    }
+
+    .dev_text {
+        font-size: 9px;
+    }
+
+    .footer_header {
+        margin-bottom: 5px;
+        font-size: 15px;
+    }
+
+    .footer_logo {
+        width: 60%;
+    }
+
+    .footer_icon {
+        width: 15px;
+        margin-right: 5px;
+        margin-top: 2px;
+    }
+
+    .footer_text {
+        font-size: 11px;
+        line-height: 20px;
+    }
+
+    .footer_nav_link {
+        font-size: 11px;
+        line-height: 25px;
+    }
+
+    .address_icon {
+        width: 16px;
+        margin-right: 5px;
+    }
+
+    .contact_sub_header {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .address_text {
+        font-size: 12px;
+        line-height: 23px;
+    }
+
+    .news_text {
+        font-size: 12px;
+        line-height: 20px;
+        margin-bottom: 13px;
+    }
+
+    .news_detail_title {
+        margin-bottom: 13px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .flag_iocn {
+        width: 20px;
+    }
+
+    .d-flex.justify-content-md-end.d-lg-none.d-md-none.pe-4 {
+        padding-right: 10px !important;
+    }
+
+    .border_right_hr {
+        height: 17px;
+        margin-top: 4px;
+    }
+}
